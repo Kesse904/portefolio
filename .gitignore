@@ -25,3 +25,6 @@ yarn-error.log*
 pnpm-debug.log*
 logs/
 *.log
+
+# fichier HTML autonome genere localement
+Portfolio_Kesse_Gondo_Firmin.html

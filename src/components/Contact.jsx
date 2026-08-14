@@ -67,16 +67,25 @@ export default function Contact() {
             <div>
               <h3 className="text-lg font-bold text-ink-900">Besoin de mon CV complet ?</h3>
               <p className="mt-1 text-sm text-ink-500">
-                Téléchargez la version PDF avec l'ensemble de mon parcours.
+                Disponible en PDF ou en Word, avec l'ensemble de mon parcours.
               </p>
             </div>
-            <a
-              href={profile.cv}
-              download
-              className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-teal-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-teal-600"
-            >
-              <Icon name="download" className="h-4 w-4" /> Télécharger le CV
-            </a>
+            <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
+              <a
+                href={profile.cv}
+                download
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-teal-600"
+              >
+                <Icon name="download" className="h-4 w-4" /> Version PDF
+              </a>
+              <a
+                href={profile.cvWord}
+                download
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-teal-300 bg-white px-6 py-3 text-sm font-semibold text-teal-600 transition hover:bg-teal-50"
+              >
+                <Icon name="download" className="h-4 w-4" /> Version Word
+              </a>
+            </div>
           </div>
         </Reveal>
       </div>

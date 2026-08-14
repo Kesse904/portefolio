@@ -8,18 +8,19 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/gondo-firmin-kesse-629934187",
   portfolio: "https://portfolio-kgf.lovable.app",
   cv: "./CV_Kesse_Gondo_Firmin.pdf",
+  cvWord: "./CV_Kesse_Gondo_Firmin.docx",
   photo: "./photo.png",
   tagline:
     "Je conçois, sécurise et supervise des infrastructures réseau fiables pour des entreprises multi-sites.",
   about: [
-    "Technicien Réseaux & Systèmes motivé et rigoureux, avec plus de 5 ans d'expérience dans la gestion, la configuration et la maintenance d'infrastructures informatiques.",
+    "Technicien Réseaux & Systèmes motivé et rigoureux, avec plus de 6 ans d'expérience dans la gestion, la configuration et la maintenance d'infrastructures informatiques.",
     "Spécialisé dans l'administration de serveurs Windows/Linux, la virtualisation, la sécurité et la supervision réseau. J'interviens aussi bien sur la conception d'architectures multi-sites que sur l'automatisation des sauvegardes et la mise en place d'outils de gestion du parc informatique.",
     "Mon objectif : rejoindre une entreprise innovante afin de contribuer à la fiabilité, la performance et la sécurité de ses systèmes informatiques.",
   ],
 };
 
 export const stats = [
-  { value: "5+", label: "Années d'expérience" },
+  { value: "6+", label: "Années d'expérience" },
   { value: "69", label: "Utilisateurs supportés" },
   { value: "4", label: "Sites administrés" },
   { value: "~55", label: "Tickets traités / mois" },
@@ -63,7 +64,7 @@ export const experience = [
     role: "Administrateur Systèmes & Réseaux",
     company: "KAMA-SA",
     place: "Abidjan, Côte d'Ivoire",
-    period: "Décembre 2023 — Présent",
+    period: "Décembre 2024 — Présent",
     current: true,
     tasks: [
       "Gestion et support de 69 utilisateurs répartis sur 4 sites : Abidjan (Marcory, Vridi) et Yamoussoukro (Le Parc, centre emplisseur).",
@@ -85,7 +86,7 @@ export const experience = [
     role: "Technicien Informatique",
     company: "Abidjan",
     place: "Koumassi, Côte d'Ivoire",
-    period: "Avril 2020 — Décembre 2023",
+    period: "Avril 2020 — Décembre 2024",
     current: false,
     tasks: [
       "Dépannage matériel et logiciel des postes utilisateurs.",
@@ -218,6 +219,7 @@ export const certifications = [
   "Certification en Maintenance Informatique",
   "Certificat en Réseau Informatique",
   "Certificat en CCNA",
+  "RHCSA — en cours",
 ];
 
 export const languages = [{ name: "Français", level: "Courant", pct: 100 }];
