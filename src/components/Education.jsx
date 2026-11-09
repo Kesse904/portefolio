@@ -47,11 +47,23 @@ export default function Education() {
               <ul className="space-y-3">
                 {certifications.map((c) => (
                   <li
-                    key={c}
-                    className="flex items-center gap-3 rounded-xl bg-paper-100 px-4 py-3.5 text-sm text-ink-700 transition hover:bg-teal-50"
+                    key={c.title}
+                    className="flex items-start gap-3 rounded-xl bg-paper-100 px-4 py-3.5 text-sm text-ink-700 transition hover:bg-teal-50"
                   >
-                    <Icon name="check" className="h-4 w-4 shrink-0 text-teal-500" />
-                    {c}
+                    <Icon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-teal-500" />
+                    <div>
+                      <p>
+                        {c.title}
+                        {c.issuer && <span className="text-ink-400"> · {c.issuer}</span>}
+                      </p>
+                      {c.courses && (
+                        <ul className="mt-2 list-disc space-y-1 pl-4 text-xs text-ink-500">
+                          {c.courses.map((course) => (
+                            <li key={course}>{course}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>

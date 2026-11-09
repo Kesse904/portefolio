@@ -199,10 +199,37 @@ projects.push(
       "Gain notable en efficacité et satisfaction des utilisateurs internes",
     ],
     tags: ["GLPI", "ITSM", "Ticketing", "Inventaire", "Formation"],
+  },
+  {
+    title: "Application de pointeuse pour la gestion des présences",
+    client: "KAMA-SA — Pointeuses biométriques Hikvision",
+    icon: "activity",
+    diagram: "attendance",
+    context:
+      "Les employés pointent par empreinte digitale sur plusieurs portes : il fallait une vue consolidée des présences, des retards et des absences de chaque employé.",
+    actions: [
+      "Récupération automatique des pointages des contrôleurs Hikvision via l'API ISAPI et stockage en base MariaDB.",
+      "Développement d'une API FastAPI calculant arrivées, heures travaillées, retards et absences.",
+      "Création d'un dashboard Angular en temps quasi réel avec comptes et rôles administrateur / RH.",
+      "Mise en place des alertes de retard par email, du module de congés et des rapports Excel / PDF.",
+      "Déploiement sur Windows Server (service NSSM, IIS) avec intégration et déploiement continus.",
+    ],
+    results: [
+      "Présents, retards et absents visibles en temps quasi réel",
+      "Employés prévenus automatiquement par email en cas de retard, RH alertés au 3e retard du mois",
+      "Rapports de présence exportables en Excel et en PDF",
+      "Congés saisis, validés et pris en compte dans le suivi des présences",
+    ],
+    tags: ["FastAPI", "Angular", "MariaDB", "Hikvision ISAPI", "CI/CD"],
   }
 );
 
 export const education = [
+  {
+    title: "Licence 3 — Réseaux et Sécurité Informatique (RSI)",
+    school: "UVCI — Université Virtuelle de Côte d'Ivoire",
+    period: "En cours",
+  },
   {
     title: "BTS Informatique — Développement d'Applications",
     school: "EST-LOKO, Abidjan",
@@ -216,10 +243,21 @@ export const education = [
 ];
 
 export const certifications = [
-  "Certification en Maintenance Informatique",
-  "Certificat en Réseau Informatique",
-  "Certificat en CCNA",
-  "RHCSA — en cours",
+  {
+    title: "Certificat professionnel Google IT Support",
+    courses: [
+      "Administration système et services d'infrastructure informatique",
+      "Systèmes d'exploitation et vous : devenir un utilisateur avancé",
+      "Fondamentaux du support technique",
+      "Les bits et octets du réseau informatique",
+      "Sécurité informatique : Défense contre les arts obscurs numériques",
+    ],
+  },
+  { title: "RHCSA — Administration Linux", issuer: "Skillgate" },
+  { title: "Bootcamp IA", issuer: "Skillgate" },
+  { title: "Certification en Maintenance Informatique" },
+  { title: "Certificat en Réseau Informatique" },
+  { title: "Certificat en CCNA" },
 ];
 
 export const languages = [{ name: "Français", level: "Courant", pct: 100 }];

@@ -188,11 +188,49 @@ function TicketFlow() {
   );
 }
 
+/* 5. Attendance — biometric terminals to dashboard */
+function Attendance() {
+  return (
+    <>
+      <rect x="14" y="30" width="72" height="24" {...box} />
+      <Label x={50} y={45} size={6.5}>POINTEUSE 1</Label>
+      <rect x="14" y="66" width="72" height="24" {...box} />
+      <Label x={50} y={81} size={6.5}>POINTEUSE 2</Label>
+      <rect x="14" y="102" width="72" height="24" {...box} />
+      <Label x={50} y={117} size={6.5}>POINTEUSE N</Label>
+      <Label x={50} y={142} size={6}>EMPREINTE</Label>
+
+      <path d="M86 42h20v36M86 78h34M86 114h20V78" {...wire} />
+      <Dash d="M106 78h14" />
+      <Label x={103} y={68} size={5.5}>ISAPI</Label>
+
+      <rect x="120" y="54" width="70" height="48" {...box} fill="rgba(65,191,176,.16)" />
+      <Label x={155} y={75} size={8}>FASTAPI</Label>
+      <Label x={155} y={89} size={6}>PRÉSENCES</Label>
+
+      <path d="M155 102v30" {...wire} />
+      <rect x="120" y="132" width="70" height="24" {...box} />
+      <Label x={155} y={147} size={7}>MARIADB</Label>
+
+      <path d="M190 78h16M206 42v108M206 42h12M206 96h12M206 150h12" {...wire} />
+      <Dash d="M190 78h16" dur="1.8s" />
+
+      <rect x="218" y="30" width="70" height="24" {...box} fill="rgba(65,191,176,.14)" />
+      <Label x={253} y={45} size={6.5}>DASHBOARD</Label>
+      <rect x="218" y="84" width="70" height="24" {...box} stroke="#e0a23c" fill="rgba(224,162,60,.12)" />
+      <Label x={253} y={99} size={6.5}>ALERTES EMAIL</Label>
+      <rect x="218" y="138" width="70" height="24" {...box} />
+      <Label x={253} y={153} size={6.5}>EXCEL · PDF</Label>
+    </>
+  );
+}
+
 const MAP = {
   lan: LanBackup,
   failover: Failover,
   vpn: VpnTunnel,
   tickets: TicketFlow,
+  attendance: Attendance,
 };
 
 export default function Diagram({ name, className = "" }) {
