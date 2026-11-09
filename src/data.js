@@ -105,8 +105,8 @@ export const projects = [
     icon: "database",
     diagram: "lan",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=70",
-    imageAlt: "Baie de serveurs et câblage réseau structuré",
+      "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=900&q=75",
+    imageAlt: "Baie de brassage et câblage réseau structuré",
     context:
       "Infrastructure réseau simple pour une trentaine d'utilisateurs, aucune solution de sauvegarde centralisée et équipements peu interconnectés.",
     actions: [
@@ -129,8 +129,8 @@ export const projects = [
     icon: "router",
     diagram: "failover",
     image:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=70",
-    imageAlt: "Équipement réseau et routeur en salle technique",
+      "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?auto=format&fit=crop&w=900&q=75",
+    imageAlt: "Câbles réseau bleus connectés à des équipements actifs",
     context:
       "Interruptions fréquentes d'accès Internet, imprimantes réseau mal adressées, box 4G Orange limitée en administration et absence de fibre optique.",
     actions: [
@@ -156,8 +156,8 @@ projects.push(
     icon: "lock",
     diagram: "vpn",
     image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=70",
-    imageAlt: "Sécurité informatique et connexion chiffrée",
+      "https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=900&q=75",
+    imageAlt: "Cadenas posé sur un clavier entouré de traînées lumineuses",
     context:
       "L'entreprise dépendait d'un prestataire externe pour son VPN, ce qui représentait un coût récurrent important pour la direction.",
     actions: [
@@ -181,9 +181,9 @@ projects.push(
     icon: "ticket",
     diagram: "tickets",
     image:
-      "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=900&q=70",
-    imageAlt: "Technicien IT responsable de la gestion du parc informatique",
-    imagePos: "50% 22%",
+      "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?auto=format&fit=crop&w=900&q=75",
+    imageAlt: "Équipe informatique travaillant ensemble devant des écrans",
+    imagePos: "50% 40%",
     context:
       "Gestion informelle des demandes informatiques (messages, appels, visites spontanées), manque de visibilité sur le parc et faible traçabilité des interventions.",
     actions: [
@@ -205,6 +205,9 @@ projects.push(
     client: "KAMA-SA — Pointeuses biométriques Hikvision",
     icon: "activity",
     diagram: "attendance",
+    image:
+      "https://images.unsplash.com/photo-1585079374502-415f8516dcc3?auto=format&fit=crop&w=900&q=75",
+    imageAlt: "Empreinte digitale lumineuse sur un lecteur biométrique",
     context:
       "Les employés pointent par empreinte digitale sur plusieurs portes : il fallait une vue consolidée des présences, des retards et des absences de chaque employé.",
     actions: [
@@ -226,7 +229,7 @@ projects.push(
 
 export const education = [
   {
-    title: "Licence 3 — Réseaux et Sécurité Informatique (RSI)",
+    title: "Licence — Réseaux et Sécurité Informatique (RSI)",
     school: "UVCI — Université Virtuelle de Côte d'Ivoire",
     period: "En cours",
   },
@@ -255,9 +258,9 @@ export const certifications = [
   },
   { title: "RHCSA — Administration Linux", issuer: "Skillgate" },
   { title: "Bootcamp IA", issuer: "Skillgate" },
-  { title: "Certification en Maintenance Informatique" },
+  { title: "Certification en Maintenance Informatique", issuer: "ORION" },
   { title: "Certificat en Réseau Informatique" },
-  { title: "Certificat en CCNA" },
+  { title: "Certificat en CCNA", issuer: "Skillgate" },
 ];
 
 export const languages = [{ name: "Français", level: "Courant", pct: 100 }];
