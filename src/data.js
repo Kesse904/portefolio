@@ -6,7 +6,7 @@ export const profile = {
   phoneHref: "tel:+2250777629588",
   email: "firminkesse904@gmail.com",
   linkedin: "https://www.linkedin.com/in/gondo-firmin-kesse-629934187",
-  portfolio: "https://portfolio-kgf.lovable.app",
+  portfolio: "https://portefolio-five-topaz.vercel.app",
   cv: "./CV_Kesse_Gondo_Firmin.pdf",
   cvWord: "./CV_Kesse_Gondo_Firmin.docx",
   photo: "./photo.png",
